@@ -409,47 +409,36 @@
 
             <h3 class="title">Оставьте свои данные, мы вам перезвоним</h3>
 
-            <div class="form-field">
-            <label class="form-label" for="name">Имя
-                <input class="input" type="text" name="name" id="name" autofocus />
+            <label class="form-label">Имя
+                <input class="input" type="text" name="user-name" autofocus />
                 <svg class="icon-form" width="18px" height="18px">
                     <use href="./images/sprite.svg#icon-person"></use>
                 </svg>
             </label>
-            
-            </div>
+        
+            <label class="form-label">Телефон
+                <input class="input" type="tel" name="user-tel" />
+                <svg class="icon-form" width="18px" height="18px">
+                    <use href="./images/sprite.svg#icon-phone-black"></use>
+                </svg>
+            </label>
 
-            <div class="form-field">
-                <label class="form-label" for="tel">Телефон
-                    <input class="input" type="tel" name="tel" id="tel" />
-                    <svg class="icon-form" width="18px" height="18px">
-                        <use href="./images/sprite.svg#icon-phone-black"></use>
-                    </svg>
-                </label>
+            <label class="form-label">Почта
+                <input class="input" type="email" name="user-email" />
+                <svg class="icon-form" width="18px" height="18px">
+                    <use href="./images/sprite.svg#icon-email-black"></use>
+                </svg>
+            </label>
+
+            <label class="form-label">Коментарий
+                <textarea class="comment-textarea" name="comment" placeholder="Введите текст"></textarea>
+            </label>
                 
-            </div>
 
-            <div class="form-field">
-                <label class="form-label" for="email">Почта
-                    <input class="input" type="email" name="email" id="email" />
-                    <svg class="icon-form" width="18px" height="18px">
-                        <use href="./images/sprite.svg#icon-email-black"></use>
-                    </svg>
-                </label>
-                
-            </div>
-
-            <div class="form-field">
-                <label class="form-label" for="comment">Коментарий
-                    <textarea class="comment-textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
-                </label>
-                
-            </div>
-
-            <div class="form-field">
+            <div class="agreement-form-field">
                 <input type="checkbox" name="agreement" id="agreement" />
-                <label for="agreement">Соглашаюсь с рассылкой и принимаю 
-                    <a target="_blank" rel="noopener noreffer" aria-label="agreement" href="https://twitter.com">Условия договора</a>
+                <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю   
+                    <a class="agreement-link" target="_blank" rel="noopener noreffer" aria-label="agreement" href="https://twitter.com">Условия договора</a>
                 </label>
             </div>
 
