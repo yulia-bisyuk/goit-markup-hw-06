@@ -64,7 +64,7 @@
             <!-- Преимущества -->
             <section class="section advantages">
             <div class="container">
-                        <h2 class="visually-hidden-heading">Преимущества</h2>  
+                        <h2 class="visually-hidden">Преимущества</h2>  
 
                     <ul class="advantages-list">
                         <li class="list-item"> 
@@ -410,7 +410,7 @@
             <h3 class="title">Оставьте свои данные, мы вам перезвоним</h3>
 
             <label class="form-label">Имя
-                <input class="input" type="text" name="user-name" autofocus />
+                <input class="input" type="text" name="user-name" />
                 <svg class="icon-form" width="18px" height="18px">
                     <use href="./images/sprite.svg#icon-person"></use>
                 </svg>
@@ -433,15 +433,12 @@
             <label class="form-label">Коментарий
                 <textarea class="comment-textarea" name="comment" placeholder="Введите текст"></textarea>
             </label>
-                
 
-            <div class="agreement-form-field">
-                <input type="checkbox" name="agreement" id="agreement" />
-                <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю   
-                    <a class="agreement-link" target="_blank" rel="noopener noreffer" aria-label="agreement" href="https://twitter.com">Условия договора</a>
-                </label>
-            </div>
-
+            <input class="agreement-checkbox visually-hidden" type="checkbox" name="agreement" id="agreement" />
+            <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю
+                <a class="agreement-link" target="_blank" rel="noopener noreffer" aria-label="agreement" href="https://twitter.com"> Условия договора</a>
+            </label>
+           
             <button class="button-send" type="submit">Отправить</button>
 
         </form>

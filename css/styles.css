@@ -308,7 +308,7 @@ img {
   flex-basis: calc((100% - 120px) / 4);
 }
 
-.visually-hidden-heading {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -733,7 +733,7 @@ img {
 .input-footer:-webkit-autofill:hover,
 .input-footer:-webkit-autofill:focus {
   -webkit-text-fill-color: #fff;
-  -webkit-box-shadow: 0 0 0px 1000px var(--background-color-dark-gray) inset;
+  box-shadow: 0 0 0px 1000px var(--background-color-dark-gray) inset;
 }
 .input-footer:focus {
   border: 1px solid var(--accent-color);
@@ -912,31 +912,44 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.agreement-form-field {
-  /* display: flex; */
-  margin-bottom: 30px;
-}
+
 .agreement-label {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 
   color: var(--main-text-color);
 }
+
 .agreement-link {
+  margin-left: 3px;
   color: var(--accent-color);
 }
-/* .agreement-label::before {
+.agreement-label::before {
   content: "";
   display: inline-block;
   width: 16px;
-  height: 16px;
-  border: 1px solid var(--second-bg);
+  height: 15px;
+  border: 1px solid var(--heading-text-color);
   border-radius: 3px;
-} */
-
+  margin-right: 8px;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.agreement-checkbox:checked + .agreement-label::before {
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 .button-send {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
