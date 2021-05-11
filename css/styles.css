@@ -705,7 +705,7 @@ img {
   fill: #fff;
 }
 .subscribe-wrapper {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .subscribe-content {
   display: flex;
@@ -949,6 +949,10 @@ img {
   background-size: contain;
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.agreement-checkbox:focus + .agreement-label::before {
+  border: 2px solid var(--main-text-color);
 }
 .button-send {
   background-color: var(--accent-color);
